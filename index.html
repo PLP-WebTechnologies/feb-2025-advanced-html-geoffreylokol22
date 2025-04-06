@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML5 Elements</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>Learn HTML5 Basics</li>
+            <li>Study Forms and Input Types</li>
+            <li>Explore Multimedia Elements</li>
+            <li>Work with Tables and Lists</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>External Image</h2>
+        <img src="https://images.pexels.com/photos/2732224/pexels-photo-2732224.jpeg" alt="Nature Image" width="600" />
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact Information</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>1234 Elm Street</td>
+                    <td>555-1234</td>
+                    <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>5678 Oak Avenue</td>
+                    <td>555-5678</td>
+                    <td>janesmith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Johnson</td>
+                    <td>9101 Pine Road</td>
+                    <td>555-9101</td>
+                    <td>michael.johnson@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>1122 Maple Lane</td>
+                    <td>555-1122</td>
+                    <td>emily.davis@example.com</td>
+                </tr>
+                <tr>
+                    <td>Chris Lee</td>
+                    <td>3344 Birch Boulevard</td>
+                    <td>555-3344</td>
+                    <td>chris.lee@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="post">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required />
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your Password" required minlength="8" />
+
+            <!-- Date -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+
+            <!-- Dropdown (Select) -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Radio Buttons (Subscription) -->
+            <label>Subscription:</label>
+            <input type="radio" id="subscribeYes" name="subscribe" value="yes" required />
+            <label for="subscribeYes">Yes</label>
+            <input type="radio" id="subscribeNo" name="subscribe" value="no" required />
+            <label for="subscribeNo">No</label>
+
+            <!-- Checkboxes -->
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interests" value="coding" />
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="gaming" name="interests" value="gaming" />
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" id="reading" name="interests" value="reading" />
+            <label for="reading">Reading</label>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Advanced HTML5 Elements | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
